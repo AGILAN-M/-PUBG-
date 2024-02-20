@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Averia+Sans+Libre:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+        body {
+            background-color: orange;
+            font-family: 'Antic Didone', serif;
+            font-family: 'Averia Sans Libre', sans-serif;
+            text-transform: capitalize;
+            text-align: justify;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .nav-item {
+            margin-left: 80px;
+
+        }
+
+        .sectionpage img {
+            height: 93vh;
+        }
+
+        .sectionarea p {
+            font-size: 20px;
+        }
+
+        .sectionarea span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .icon-pad:hover {
+            color: rgb(255, 179, 0);
+        }
+
+        .fate {
+
+            margin-left: 32%;
+        }
+
+        .wish-ico {
+            margin-left: 5%;
+        }
+
+        .wish-ico:hover {
+            color: red;
+        }
+
+        .homecard {
+            margin-bottom: 20px;
+        }
+
+        .nav-des:hover {
+            border-bottom: 5px solid orange !important;
+        }
+
+        .icon-pad:hover {
+            animation: bounce 0.5s infinite;
+            /* Adjust the animation duration as needed */
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(50px); /* Initial position off-screen to the right */
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in-right.fade-in {
+            opacity: 1;
+            transform: translateX(0); /* Final position on-screen */
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media screen and (max-width: 1328px) {
+            .media {
+                flex: 100% !important;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            .nav-item {
+                margin-left: 6%;
+            }
+
+            .icon-pad {
+                margin-top: 7%;
+                padding-bottom: 5%;
+            }
+        }
+
+
+
+        @media screen and (max-width: 362px) {
+            .card {
+                margin-left: 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            img {
+                width: 100% !important;
+            }
+
+            .alignOf {
+                margin-left: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar  -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="navimagelogo.png" alt=""
+                    style="height: 38px; padding-left:25px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-des">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item nav-des">
+                        <a class="nav-link" href="#shoppage">Shop</a>
+                    </li>
+                    <li class="nav-item nav-des">
+                        <a class="nav-link" href="character.html">Inventory</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form><br>
+                <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                    class="btn btn-outline me-2">
+                    <i class="fa-solid icon-pad fa-cart-shopping fa-2xl"></i>
+                </a>
+                <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions1"
+                    class="btn btn-outline">
+                    <i class="fa-solid icon-pad fa-heart fa-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inventory</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart">
+                <ul id="cart-items"></ul>
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+            </div>
+            <button type="button" onclick="clearCart()" class="btn btn-danger">Clear</button>
+            <button class="btn btn-success" onclick="proceed()">Proceed</button>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+        </div>
+    </div>
+    <!-- toast
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fa-solid icon-pad fa-cart-shopping fa-2xl"></i>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                cart updated!!!
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fa-solid icon-pad fa-cart-shopping fa-2xl"></i>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                wishlist updated!!!
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- wish list off canvas -->
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Wish List</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="wishlist">
+                <ul id="wish-items"></ul>
+                <span></span>
+                <button type="button" class="btn btn-danger" onclick="clearWish()">Clear All</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+        </div>
+    </div>
+
+    <!-- section -->
+    <div class="sectionpage">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pubg-3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pubg-17.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pubg-18.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pubg-19.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- below nav section area -->
+    <h1 class="text-center bg-dark text-white mt-5 py-4 fade-in-right">"Welcome To The Margetra Eventzone"</h1>
+
+    <div class="sectionarea container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+                <div class="media h-100">
+                    <img src="pubg-6.webp" class="img-fluid w-100" alt="">
+                    <p class="text-break ">
+                        Visit our official event page at [Event Website] for registration details, rules, and additional
+                        information. Gather your squad, fine-tune your strategy, and prepare for the ultimate PUBG
+                        showdown.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <h3><span>"Battle Royale Extravaganza:"</span> Join the Ultimate PUBG Event for Thrills, Kills, and
+                    Glory!</h3>
+                <img src="pubg-7.webp" alt="" class="img-fluid py-4">
+                <p>Gear up, soldiers! The battleground awaits, and it's time to dive into the adrenaline-pumping chaos
+                    of our "Battle Royale Extravaganza." Get ready for an electrifying PUBG event that will test your
+                    survival skills, strategic prowess, and trigger finger like never before!</p>
+                <img src="pubg-8.webp" alt="" class="img-fluid py-4">
+                <p><span>"Event Details:"</span> Embark on an epic journey where every decision could mean the
+                    difference between victory and defeat. The "Battle Royale Extravaganza" features intense skirmishes,
+                    heart-pounding firefights, and a relentless quest for dominance on the battlefield. Will you be the
+                    last one standing, or will you succumb to the challenges that lie ahead?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sectionarea-2 -->
+
+    <h1 class="text-center bg-dark text-white mt-5 mb-4 py-4 fade-in-right">"Rise to Glory: The strongest will reap - Claim the
+        Ultimate PUBG Title!!!!!! "</h1>
+
+    <div class="sectionarea container">
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="media">
+                    <img src="pubg-10.webp" alt="" class="img-fluid rounded">
+                </div>
+                <br>
+                <br>
+                <div class="media">
+                    <img src="pubg13.jpg" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="media">
+                            <img src="pubg-11.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="media">
+                            <img src="pubg-9.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="media">
+                            <img src="pubg-12.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <p><span>"Save the Date:"</span> Mark your calendars and set your reminders. The "Battle Royale
+                    Extravaganza" is
+                    set to unfold on [1/1/2024]. Don't miss your chance to be part of this pulse-pounding PUBG
+                    experience.</p>
+                <p><span>"How to Join:"</span> Visit our official event page at [Event Website] for registration
+                    details, rules,
+                    and additional information. Gather your squad, fine-tune your strategy, and prepare for the ultimate
+                    PUBG
+                    showdown.</p>
+                <p><span>"Dynamic Challenges:"</span> Stay on your toes as dynamic challenges unfold throughout the
+                    event. From
+                    sudden supply drops to unexpected environmental hazards, adaptability is key. Can you thrive in the
+                    face of
+                    adversity and emerge as the ultimate survivor.</p>
+                <p><span>"Dynamic Challenges:"</span> Stay on your toes as dynamic challenges unfold throughout the
+                    event. From
+                    sudden supply drops to unexpected environmental hazards, adaptability is key. Can you thrive in the
+                    face of
+                    adversity and emerge as the ultimate survivor.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <h1 style="background-color: black; color: white; margin-top: 20px; margin-bottom: 20px; padding: 20px;" class="fade-in-right">"Rise
+            to Glory: The Conqueror's Challenge - Claim the Ultimate PUBG Title!"</h1>
+        <div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+
+            <div style="flex: 0.2; order: 1; overflow: hidden;" class="media">
+                <img style="width: 100%; height: auto;" src="pubg-15.jpg" alt="">
+            </div>
+
+            <div style="flex: 0.8; order: 2; padding: 20px;" class="media animated-text">
+                <h5>"Tips and Tricks to Secure the Conqueror Title:"</h5>
+                <p><span>"Master the Landing:"</span> Choose your drop zone wisely. Opt for locations with a good loot
+                    density and strategic positioning. Early advantages can set the tone for the entire match.</p>
+                <p><span>Adaptability is Key:</span> Stay flexible in your strategy. Be prepared to adjust your
+                    playstyle based on the evolving dynamics of the match, changing circles, and your opponents'
+                    tactics.</p>
+                <p><span>Communication is Crucial:</span> Whether you're running solo or with a squad, effective
+                    communication can be the deciding factor. Use voice chat or quick commands to coordinate movements,
+                    share intel, and plan attacks.</p>
+                <p><span>Strategic Use of Resources:</span> Manage your inventory efficiently. Prioritize essential
+                    items like medical supplies, ammunition, and grenades. A well-equipped player is better positioned
+                    to face the challenges of the battlefield.</p>
+                <p><span>Map Awareness:</span> Stay vigilant about the shrinking play zone. Anticipate where the next
+                    safe zone will be and position yourself accordingly. Being caught outside the play zone can be
+                    fatal, especially in the later stages of the game.</p>
+                <p><span>Combat Tactics:</span> Master the art of combat. Practice accurate aiming, controlled bursts,
+                    and effective recoil management. Know when to engage and when to stay hidden. Patience can be a
+                    game-changer.</p>
+                <p><span>Vehicle Usage:</span> Utilize vehicles strategically. They can provide both cover and a fast
+                    means of transportation. However, be cautious, as the noise can attract unwanted attention.</p>
+                <p><span>Learn from Every Encounter:</span> Treat every match as a learning opportunity. Analyze your
+                    engagements, understand your mistakes, and continuously improve. Adaptability and growth are crucial
+                    for long-term success.</p>
+            </div>
+        </div>
+    </div>
+    <!-- rewards -->
+    <div class="container-fluid bg-dark text-white p-4">
+        <h1 class="text-center fade-in-right">"Legendary Pursuit: Unveil Your Triumphs - The Bounty of Rewards Awaits!"</h1>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">"Exclusive Rewards for Your Legendary Achievements:"</h1>
+    </div>
+
+    <div class="container-fluid justify-content-around d-flex flex-wrap">
+        <!-- card-1 -->
+        <div class="homecard mb-4" id="shoppage" data-id="1" data-name="pro-1" data-price="200">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward7.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Conqueror Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>200$</p>
+                    <a onclick="addToWish(1)" id="liveToastBtn1"><i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(1)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase
+                        Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="homecard mb-4" data-id="2" data-name="pro-2" data-price="120">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward5.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>120$</p>
+                    <a onclick="addToWish(2)" id="liveToastBtn1"> <i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(2)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase
+                        Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="homecard mb-4" data-id="3" data-name="pro-3" data-price="140">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward6.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Devil Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>140$</p>
+                    <a onclick="addToWish(3)" id="liveToastBtn1"> <i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(3)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase
+                        Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-4 -->
+        <div class="homecard mb-4" data-id="4" data-name="pro-4" data-price="300">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward2.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">S12 Conqueror Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>300$</p>
+                    <a onclick="addToWish(4)" id="liveToastBtn1"> <i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(4)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase
+                        Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second section of cards -->
+    <div class="container-fluid justify-content-around d-flex flex-wrap mt-5">
+        <!-- card-5 -->
+        <div class="homecard mb-4" data-id="5" data-name="pro-5" data-price="320">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward8.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Conqueror Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>320$</p>
+                    <a onclick="addToWish(5)" id="liveToastBtn1"><i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(5)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-6 -->
+        <div class="homecard mb-4" data-id="6" data-name="pro-6" data-price="120">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward9.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>120$</p>
+                    <a onclick="addToWish(6)" id="liveToastBtn1"><i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(6)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-7 -->
+        <div class="homecard mb-4" data-id="7" data-name="pro-7" data-price="230">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward10.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Devil Avatar Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>230$</p>
+                    <a onclick="addToWish(7)" id="liveToastBtn1"><i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(7)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-8 -->
+        <div class="homecard mb-4" data-id="8" data-name="pro-8" data-price="210">
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 13px;">
+                <img src="pubgreward11.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">S12 Conqueror Border</h5>
+                    <p class="card-text">Immerse yourself in the epic world of gaming.</p>
+                    <p>210$</p>
+                    <a onclick="addToWish(8)" id="liveToastBtn1"><i class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                    <a class="btn btn-primary" onclick="addToCart(8)" style="margin-left: 20%;"
+                        id="liveToastBtn">Purchase Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shoppage -->
+
+
+    <h1
+        style="background-color: black; color: white; margin-top: 20px; margin-bottom: 20px; padding: 20px; width: 100%;" class="fade-in-right">
+        "Treasure Trove: Explore Our Shop of Wonders - Unleash Your Gaming Style!"
+    </h1>
+    <div class="shoppage">
+        <div class="container">
+            <div class="alignOf text-center">
+                <h1>"Exclusive Skins for Your Guns :"</h1>
+            </div>
+            <div class="row justify-content-center">
+                <!-- guns -->
+                <!-- card-1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="homecard" data-id="9" data-name="pro-9" data-price="120">
+                        <div class="card bg-dark text-light" style="border-radius:13px;">
+                            <img src="gun8.webp" class="card-img-top" style="border-radius: 13px; height: 200px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kar-98(silvermeg)</h5>
+                                <p class="card-text">Kar98k, bolt-action rifle .</p>
+                                <p>120$</p>
+                                <a onclick="addToWish(9)" id="liveToastBtn1"> <i
+                                        class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                                <a class="btn btn-primary" onclick="addToCart(9)" style="margin-left: 10px;"
+                                    id="liveToastBtn">Purchase Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="homecard" data-id="10" data-name="pro-10" data-price="140">
+                        <div class="card bg-dark text-light" style="border-radius:13px;">
+                            <img src="gun7.webp" class="card-img-top" style="border-radius: 13px; height: 200px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">AKM(solidscroll)</h5>
+                                <p class="card-text">Automated Rifles .</p>
+                                <p>140$</p>
+                                <a onclick="addToWish(10)" id="liveToastBtn1"><i
+                                        class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                                <a class="btn btn-primary" onclick="addToCart(10)" style="margin-left: 10px;"
+                                    id="liveToastBtn">Purchase Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="homecard" data-id="11" data-name="pro-11" data-price="160">
+                        <div class="card bg-dark text-light" style="border-radius:13px;">
+                            <img src="gun6.webp" class="card-img-top" style="border-radius: 13px; height: 200px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">vss sniper(hergoskin)</h5>
+                                <p class="card-text">Silenced smg.</p>
+                                <p>160$</p>
+                                <a onclick="addToWish(11)" id="liveToastBtn1"><i
+                                        class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                                <a class="btn btn-primary" onclick="addToCart(11)" style="margin-left: 10px;"
+                                    id="liveToastBtn">Purchase Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="homecard" data-id="12" data-name="pro-12" data-price="190">
+                        <div class="card bg-dark text-light" style="border-radius:13px;">
+                            <img src="gun5.webp" class="card-img-top" style="border-radius: 13px; height: 200px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">M416(drevilskin)</h5>
+                                <p class="card-text">intense automated rifle.</p>
+                                <p>190$</p>
+                                <a onclick="addToWish(12)" id="liveToastBtn1"><i
+                                        class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                                <a class="btn btn-primary" onclick="addToCart(12)" style="margin-left: 10px;"
+                                    id="liveToastBtn">Purchase Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second section of cards -->
+    <div class="container" style="padding-top:70px;">
+        <div class="row justify-content-center">
+            <!-- card-5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="homecard" data-id="13" data-name="pro-13" data-price="230">
+                    <div class="card bg-dark text-light" style="border-radius:13px;">
+                        <img src="gun4.webp" class="card-img-top" style="border-radius: 13px; height: 200px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Awm(subterskin)</h5>
+                            <p class="card-text">one shot bolt action.</p>
+                            <p>230$</p>
+                            <a onclick="addToWish(13)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(13)" style="margin-left: 10px;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="homecard" data-id="14" data-name="pro-14" data-price="320">
+                    <div class="card bg-dark text-light" style="border-radius:13px;">
+                        <img src="gun3.webp" class="card-img-top" style="border-radius: 13px; height: 200px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini14(bloodbath)</h5>
+                            <p class="card-text">AR rifles with intense firerate.</p>
+                            <p>320$</p>
+                            <a onclick="addToWish(14)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(14)" style="margin-left: 10px;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="homecard" data-id="15" data-name="pro-15" data-price="210">
+                    <div class="card bg-dark text-light" style="border-radius:13px;">
+                        <img src="gun2.webp" class="card-img-top" style="border-radius: 13px; height: 200px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Devil r15g(grooter)</h5>
+                            <p class="card-text">semi pistols of bone.</p>
+                            <p>210$</p>
+                            <a onclick="addToWish(15)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(15)" style="margin-left: 10px;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-8 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="homecard" data-id="16" data-name="pro-16" data-price="130">
+                    <div class="card bg-dark text-light" style="border-radius:13px;">
+                        <img src="gun1.webp" class="card-img-top" style="border-radius: 13px; height: 200px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Flare devil(lotery)</h5>
+                            <p class="card-text">drops the guns, vehicle, loots.</p>
+                            <p>130$</p>
+                            <a onclick="addToWish(16)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(16)" style="margin-left: 10px;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- dressskins -->
+
+    <h1 class="text-center bg-dark text-white p-4 mt-4 mb-4 fade-in-right">
+        "Treasure Trove: Explore Our Shop of Wonders - Unleash Your Gaming Style!"
+    </h1>
+    <div class="shoppage">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h1>"Exclusive Skins for Your outfits :"</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- dress -->
+                <!-- card-1 -->
+                <div class="col">
+                    <div class="homecard" data-id="17" data-name="pro-17" data-price="320">
+                        <div class="card bg-dark text-light" style="border-radius: 13px;">
+                            <img src="dress1.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">parahoh</h5>
+                                <p class="card-text">reincarnation of mummy.</p>
+                                <p>320$</p>
+                                <a onclick="addToWish(17)" id="liveToastBtn1">
+                                    <i class="fa-solid wish-ico fa-heart fa-2xl"></i>
+                                </a>
+                                <a class="btn btn-primary" onclick="addToCart(17)" id="liveToastBtn">
+                                    Purchase Now!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="col">
+                    <div class="homecard" data-id="18" data-name="pro-18" data-price="340">
+                        <div class="card bg-dark text-light" style="border-radius: 13px;">
+                            <img src="dress2.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">samurai</h5>
+                                <p class="card-text">ninjutsu soceror.</p>
+                                <p>340$</p>
+                                <a onclick="addToWish(18)" id="liveToastBtn1">
+                                    <i class="fa-solid wish-ico fa-heart fa-2xl"></i>
+                                </a>
+                                <a class="btn btn-primary" onclick="addToCart(18)" id="liveToastBtn">
+                                    Purchase Now!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="col">
+                    <div class="homecard" data-id="19" data-name="pro-19" data-price="460">
+                        <div class="card bg-dark text-light" style="border-radius: 13px;">
+                            <img src="dress3.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">mummyskin</h5>
+                                <p class="card-text">wrapped clothes.</p>
+                                <p>460$</p>
+                                <a onclick="addToWish(19)" id="liveToastBtn1">
+                                    <i class="fa-solid wish-ico fa-heart fa-2xl"></i>
+                                </a>
+                                <a class="btn btn-primary" onclick="addToCart(19)" id="liveToastBtn">
+                                    Purchase Now!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="col">
+                    <div class="homecard" data-id="20" data-name="pro-20" data-price="290">
+                        <div class="card bg-dark text-light" style="border-radius: 13px;">
+                            <img src="dress4.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">devilrampage</h5>
+                                <p class="card-text">intense rage.</p>
+                                <p>290$</p>
+                                <a onclick="addToWish(20)" id="liveToastBtn1">
+                                    <i class="fa-solid wish-ico fa-heart fa-2xl"></i>
+                                </a>
+                                <a class="btn btn-primary" onclick="addToCart(20)" id="liveToastBtn">
+                                    Purchase Now!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second section of dress -->
+    <div class="container" style="padding-top: 70px;">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- card-5 -->
+            <div class="col">
+                <div class="homecard" data-id="21" data-name="pro-21" data-price="230">
+                    <div class="card bg-dark text-light" style="border-radius: 13px;">
+                        <img src="dress5.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">bloodhunter</h5>
+                            <p class="card-text">falkon beast.</p>
+                            <p>230$</p>
+                            <a onclick="addToWish(21)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(21)" style="margin-left: 20%;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-6 -->
+            <div class="col">
+                <div class="homecard" data-id="22" data-name="pro-22" data-price="320">
+                    <div class="card bg-dark text-light" style="border-radius: 13px;">
+                        <img src="dress6.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">jokermarch</h5>
+                            <p class="card-text">jokes apart finish.</p>
+                            <p>320$</p>
+                            <a onclick="addToWish(22)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(22)" style="margin-left: 20%;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-7 -->
+            <div class="col">
+                <div class="homecard" data-id="23" data-name="pro-23" data-price="210">
+                    <div class="card bg-dark text-light" style="border-radius: 13px;">
+                        <img src="dress7.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Devil ruler</h5>
+                            <p class="card-text">gone for a food hunting.</p>
+                            <p>210$</p>
+                            <a onclick="addToWish(23)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(23)" style="margin-left: 20%;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-8 -->
+            <div class="col">
+                <div class="homecard" data-id="24" data-name="pro-24" data-price="330">
+                    <div class="card bg-dark text-light" style="border-radius: 13px;">
+                        <img src="dress8.jpg" class="card-img-top" style="border-radius: 13px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">parade trooper</h5>
+                            <p class="card-text">army of troops under me.</p>
+                            <p>330$</p>
+                            <a onclick="addToWish(24)" id="liveToastBtn1"><i
+                                    class="fa-solid wish-ico fa-heart fa-2xl"></i></a>
+                            <a class="btn btn-primary" onclick="addToCart(24)" style="margin-left: 20%;"
+                                id="liveToastBtn">Purchase Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer part -->
+    <div class="container-fluid" style="background-color: black; padding: 40px; margin-top: 70px;">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <img class="img-fluid" src="footer1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const products = [
+            { id: 1, name: "Conquror Avatar Border", price: 200, imageUrl: "pubgreward7.jpg" },
+            { id: 2, name: "Avatar Border", price: 120, imageUrl: "pubgreward5.jpg" },
+            { id: 3, name: "Devil Avatar Border", price: 140, imageUrl: "pubgreward6.jpg" },
+            { id: 4, name: "S12 Conquror Border", price: 300, imageUrl: "pubgreward2.jpg" },
+            { id: 5, name: "Conquror Avatar Border", price: 320, imageUrl: "pubgreward8.jpg" },
+            { id: 6, name: "Avatar Border", price: 120, imageUrl: "pubgreward9.jpg" },
+            { id: 7, name: "Devil Avatar Border", price: 230, imageUrl: "pubgreward10.jpg" },
+            { id: 8, name: "S12 Conquror Border", price: 210, imageUrl: "pubgreward11.jpg" },
+            { id: 9, name: "Kar-98(silvermeg)", price: 120, imageUrl: "gun8.webp" },
+            { id: 10, name: "AKM(solidscroll)", price: 140, imageUrl: "gun7.webp" },
+            { id: 11, name: "vss sniper(hergoskin)", price: 160, imageUrl: "gun6.webp" },
+            { id: 12, name: "M416(drevilskin)", price: 190, imageUrl: "gun5.webp" },
+            { id: 13, name: "Awm(subterskin)", price: 230, imageUrl: "gun4.webp" },
+            { id: 14, name: "Mini14(bloodbath)", price: 320, imageUrl: "gun3.webp" },
+            { id: 15, name: "Devil r15g(grooter)", price: 210, imageUrl: "gun2.webp" },
+            { id: 16, name: "Flare devil(lotery)", price: 130, imageUrl: "gun1.webp" },
+            { id: 17, name: "parahoh", price: 320, imageUrl: "dress1.jpg" },
+            { id: 18, name: "samurai", price: 340, imageUrl: "dress2.jpg" },
+            { id: 19, name: "mummyskin", price: 460, imageUrl: "dress3.jpg" },
+            { id: 20, name: "devilrampage", price: 290, imageUrl: "dress4.jpg" },
+            { id: 21, name: "bloodhunter", price: 230, imageUrl: "dress5.jpg" },
+            { id: 22, name: "jokermarch", price: 320, imageUrl: "dress6.jpg" },
+            { id: 23, name: "Devil ruler", price: 210, imageUrl: "dress7.jpg" },
+            { id: 24, name: "parade trooper", price: 330, imageUrl: "dress8.jpg" },
+        ]
+//objects are stored inside the array
+        let cart = [];
+        let totalPrice = 0;
+
+        function addToCart(ProductId) {
+            const product = products.find(item => item.id === ProductId);
+
+            if (product) {
+                const existingItem = cart.find(item => item.id === ProductId);
+                if (existingItem) {
+                    existingItem.count = Math.max(existingItem.count + 1, 0); // increase count
+                    existingItem.total = existingItem.count * existingItem.price; // increase price
+                }
+
+                else {
+                    const newItem = {
+                        ...product, count: 1, total: product.price
+                    };
+                    cart.push(newItem);
+                }
+                updateCart();
+                alert('Item has Added in Cart')
+            }
+        }
+
+
+        // Function to update the cart display and total price
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            const totalElement = document.getElementById('total-price');
+
+            // Clear previous content
+            cartItemsElement.innerHTML = '';
+
+            // Update cart items
+            cart.forEach(item => {
+                const cartItemContainer = document.createElement('div');
+                cartItemContainer.className = 'cart-item';
+
+                // Create an image element
+                const img = document.createElement('img');
+                img.src = item.imageUrl;
+                img.alt = item.name;
+                img.style.width = '50px'; // Adjust the image size as needed
+                img.style.margin = '10px'
+                cartItemContainer.appendChild(img); //div{ <img> }
+
+                // Display product name and total price
+                const itemName = document.createElement('span');
+                itemName.textContent = item.name;
+                itemName.style.padding = '10px';
+                cartItemContainer.appendChild(itemName);
+
+                const priceAndQuantity = document.createElement('div');
+
+                // Create a button to decrease quantity
+                const decreaseButton = document.createElement('button');
+                decreaseButton.textContent = '-';
+                decreaseButton.className = 'btn btn-danger';
+                decreaseButton.addEventListener('click', () => updateItemCount(item.id, item.count - 1));
+                priceAndQuantity.appendChild(decreaseButton);
+
+                // Display the quantity
+                const quantity = document.createElement('span');
+                quantity.textContent = item.count;
+                quantity.style.padding = '10px';
+                priceAndQuantity.appendChild(quantity);
+
+                // Create a button to increase quantity
+                const increaseButton = document.createElement('button');
+                increaseButton.textContent = '+';
+                increaseButton.className = 'btn btn-success';
+                increaseButton.addEventListener('click', () => updateItemCount(item.id, item.count + 1));
+                priceAndQuantity.appendChild(increaseButton);
+
+                cartItemContainer.appendChild(priceAndQuantity);
+
+                const totalPrice = document.createElement('span');
+                totalPrice.textContent = `$${item.total.toFixed(2)}`;
+                cartItemContainer.appendChild(totalPrice);
+
+                cartItemsElement.appendChild(cartItemContainer);
+            });
+
+            // Update total price
+            totalPrice = cart.reduce((total, item) => total + item.total, 0);
+            totalElement.textContent = totalPrice.toFixed(2);
+
+
+        }
+
+
+        // Function to update the count of a specific item in the cart
+        function updateItemCount(productId, newCount) {
+            const itemToUpdate = cart.find(item => item.id === productId);
+
+
+            if (itemToUpdate) {
+                itemToUpdate.count = Math.max(newCount, 0);
+                itemToUpdate.total = itemToUpdate.count * itemToUpdate.price;
+
+                if (itemToUpdate.count === 0) {
+                    cart = cart.filter(item => item.id !== productId);
+                }
+                updateCart();
+
+            }
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCart();
+        }
+
+        function proceed() {
+            if (totalPrice > 0) {
+                //location.href="suc"
+                alert("success");
+            } else {
+                let response = "Your Cart Is Empty";
+                alert(response);
+            }
+        }
+
+
+
+        let wishlist = [];
+
+        function addToWish(WishId) {
+            const existingItem = wishlist.find(item => item.id === WishId);
+
+            // Check if the item is not already in the wishlist
+            if (!existingItem) {
+                const wish = products.find(item => item.id === WishId);
+
+                const newItem = {
+                    ...wish, count: 1, rate: wish.price
+                };
+                wishlist.push(newItem);
+                updateWish(); // Update the UI
+
+                alert('Item has Added in Wishlist')
+            }
+        }
+
+        function removeItemFromWish(WishId) {
+            wishlist = wishlist.filter(item => item.id !== WishId);
+            updateWish(); // Update the UI
+        }
+
+
+        function updateWish() {
+            const wishItemsElement = document.getElementById('wish-items');
+            wishItemsElement.innerHTML = '';
+
+            wishlist.forEach(item => {
+                const wishItemContainer = document.createElement('div');
+                wishItemContainer.className = 'wish-item';
+                wishItemContainer.style.marginTop = '20px';
+
+                const wishimg = document.createElement('img');
+                wishimg.src = item.imageUrl;
+                wishimg.alt = item.name;
+                wishimg.style.width = '50px';
+                wishItemContainer.appendChild(wishimg);
+
+                const wishName = document.createElement('span');
+                wishName.textContent = (item.name);
+                wishName.style.padding = '10px';
+                wishItemContainer.appendChild(wishName);
+
+                const removeButton = document.createElement('button');
+                removeButton.className = 'btn btn-danger';
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeItemFromWish(item.id);
+                wishItemContainer.appendChild(removeButton);
+
+
+
+                wishItemsElement.appendChild(wishItemContainer);
+            });
+
+        }
+
+        function clearWish() {
+            wishlist = [];
+            updateWish();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var fadeElements = document.querySelectorAll('.fade-in-right');
+            var options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+    
+            var observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+    
+            fadeElements.forEach(function (element) {
+                observer.observe(element);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
